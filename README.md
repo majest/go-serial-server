@@ -14,3 +14,7 @@ Usage of ./go-serial-server:
   -port string
     	Server Port number (default "8000")
 ```
+
+```
+curl -X POST  --data "data=123" http://localhost:8000/send
+```
