@@ -57,7 +57,7 @@ func HandlePost(w http.ResponseWriter, r *http.Request) {
 	data := r.PostForm.Get("data")
 	log.Println(data)
 	sc.Write(data)
-	io.WriteString(w, fmt.Sprintf("sent %s\n", data))
+	io.WriteString(w, data)
 }
 
 func main() {
